@@ -13,9 +13,11 @@ header{
 }
 
 header img{
-    width:120px;
     height:auto;
-    border-radius:50%;
+    border-radius:50%;        
+    max-width: 120px;   
+    position: relative;
+    top: -15px;
 }
 .img-logoCheems{
     width:150px;
@@ -100,4 +102,19 @@ footer{
     text-align:center;
     padding:35px 20px;
     margin-top:40px;
+}
+
+@media screen and (max-width: 575.98px) {
+    header {
+        padding: 30px 15px;
+    }
+.img-logoCheems {
+        width: 80px;
+        height: auto;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin: 0 auto 1px auto;
+}
 }
